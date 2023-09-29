@@ -6,16 +6,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
-    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+    <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>  <!-- libreria de Qr  -->
     
 </head>
+<header class="header" id="inicio">
+    <img src="img/bx-menu.svg" alt=""class="menu">
+    <nav class="popup  ">
+        <div class="contenedor head">
+            <h1 class="titulo">  El codigo es</h1>
+            <h2 id="resultado"></h2>
+            <img src="imagen/smurf cat.png" alt="">
+        </div>
+    </nav>
+
+</header>
 <body>
     <div id="contenedor">
         <h1>Escáner de códigos QR</h1>
         <video id="scanner"></video>
         <div id="resultado"></div>
-    </div>
-    
+    </div> 
+    <audio id ="miaudio" src="/audio/weliv.mp3"  type="audio/mpeg"> </audio> 
+
+    </div>    
     <script src="js/escaner.js"></script>
 </body>
 </html>

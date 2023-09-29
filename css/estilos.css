@@ -8,14 +8,51 @@
 
 #scanner {
     width: 100%;
-    border: 5px solid 
+    border: 5px solid;
+    position:static ;
 }
 h1{
     font-family: 'Pixelify Sans', cursive;
 }
-
+h2{
+    font-family: 'Pixelify Sans', cursive;
+}
 #resultado {
     margin-top: 20px;
     font-size: 18px;
     color: white;
+}
+
+.popup{
+    position: fixed;
+    width: 70vw;
+    height: 20%;
+    margin: 0 auto;
+    text-align: center;
+    top: 25%;
+    left: 15%;
+    border-radius: 20px;
+    background-image: linear-gradient(-60deg, #4bc2aacc 0%, #f8d445 100%);
+    z-index: 3;
+    transition: transform .3s ease-in-out;
+    transform: translate(200%);
+}
+
+.spread{
+    transform: translate(0);
+}
+.popcat{ 
+        display: inline-block;
+        min-width: 100px; /* Establece el ancho mínimo */
+        min-height: 50px; /* Establece la altura mínima */
+        padding: 10px; /* Añade espacio alrededor del contenido */
+        border: 1px solid #000; /* Agrega un borde para visualización */
+        background-color: #f0f0f0; /* Agrega un color de fondo opcional */
+        top: 25%;
+        left: 15%;
+        border-radius: 20px;
+        background-image: linear-gradient(-60deg, #4bc2aacc 0%, #f8d445 100%);
+        z-index: 3;
+        transition: transform .3s ease-in-out;
+        transform: translate(200%);
 }
