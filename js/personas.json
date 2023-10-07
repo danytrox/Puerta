@@ -10,5 +10,17 @@
     "nombre" : "pepe six ",
     "edad"   : 23,
     "rut"    : "22451773-8"
+},
+{
+    "id" : 3,
+    "nombre" : "miau ",
+    "edad"   : 23,
+    "rut"    : "66666666-6"
+},
+{
+    "id" : 4,
+    "nombre" : "cesar miau ",
+    "edad"   : 33,
+    "rut"    : "7777777-6"
 }
 ]
