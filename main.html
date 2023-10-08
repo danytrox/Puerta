@@ -9,7 +9,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nuestra seguridad</title>
 </head>
 <body>
     <h1 id = "titulo">NUESTRA
@@ -20,17 +20,23 @@
         <button class ="btnApp" id="ingreso">INGRESO</button>
         <button class ="btnApp" >PASE INVITADO</button>
         <button class ="btnApp" id ="reporte">  GENERAR REPORTE</button>
+        <button id ="btnEscan">escaner</button>
     </div>
-    <div class="contmarca">
-        <h2 id="marca">Dsoluciones</h2>
-    </div>
+
 </body>
+<div class="contmarca">
+    <h2 id="marca">Dsoluciones</h2>
+</div>
 <script>
+
     document.getElementById('ingreso').addEventListener('click', function(){
-        window.location.href = "index.html";
+        window.location.href = "ingreso.html";
     });
     document.getElementById('reporte').addEventListener('click', function(){
         window.location.href = "reporte.html";
+    });
+    document.getElementById('btnEscan').addEventListener('click', function(){
+        window.location.href = "index.html";
     });
 </script>
 </html>

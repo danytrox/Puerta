@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/miauestilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1 id = "titulo">NUESTRA
+            <br>
+            <span>SEGURIDAD</span>
+        </h1>
+        <div class="contenidoQr">
+            <img id ="imagenQr"src="imagen/qr.jpeg">
+            <nav class="popup  ">
+                <div class="termino">
+                    <h2 id="resultado">tiempo limite </h2>
+                    <p>tiempo limite alcanzado porfavor volver a intentar</p>
+                </div>
+            </nav>
+        </div>
+
+        <div id ="tiempo">tiempo restante
+            <div>
+                <span class="contador" id="hours">00</span>
+                <span class="contador">Horas</span>
+                <span class="contador" id="minutes">00</span>
+                <span class="contador">Minutos</span>
+                <span class ="contador" id="seconds">00</span>
+                <span class="contador">Segundos</span>
+            </div>
+        </div>
+
+<button id="regresa" >regresar</button>
+</body>
+<script>
+    document.getElementById('regresa').addEventListener('click', function(){
+        window.location.href = "main.html";
+    });
+</script>
+<script src="js/contador.js"></script>
+</html>
