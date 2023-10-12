@@ -1,11 +1,9 @@
-document.getElementById("imagenQr").style.visibility = "hidden";
-const pop2 = document.querySelector('.popup2');
-const pop3 = document.querySelector('.popup3');
+document.getElementById("imagenQr").style.visibility = "visibility";
 
-function reiniciarContador() {
+
     // Obtener la fecha actual y agregar 2 horas
     const startDate = new Date();
-    startDate.setSeconds(startDate.getSeconds() + 20);
+    startDate.setSeconds(startDate.getSeconds() + 10);
     const endDate = startDate.getTime();
     const pop = document.querySelector('.popup');
     
@@ -36,7 +34,7 @@ function reiniciarContador() {
         pop.classList.toggle("spread");
     }
     }, 200);
-}
+
 
 document.getElementById("si").addEventListener("click", function () {
     // Llama a la función para reiniciar el contador

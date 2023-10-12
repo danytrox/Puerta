@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="css/miauestilo.css">
+        <link rel="stylesheet" href="css/invitado.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>INGRESO</title>
+        <title>Pase invitado</title>
     </head>
     <body>
         <h1 id = "titulo">NUESTRA
             <br>
             <span>SEGURIDAD</span>
         </h1>
-        <h2 id="h2qr"> CODIGO QR</h2>
         <div class="contenidoQr ">
-            
             <img id ="imagenQr"src="imagen/qr.jpeg">
-            
             <nav class="popup  ">
                 <div class="termino">
                     <h2 id="resultado">tiempo limite </h2>
@@ -28,24 +25,7 @@
             </nav>
         </div>
 
-        <div class="habilitado">
-            <nav class="popup2 spread ">
-                <div class="termino">
-                    <h2 id="resultado">Abrir porton? </h2>
-                    <button id="si">si</button>
-                    <button id="no">no</button>
-                </div>
-            </nav>
-        </div>
-        <div class="abre">
-            <nav class="popup3  ">
-                <div class="termino">
-                    <h2 id="resultado">Se abre porton</h2>
-                </div>
-            </nav>
-        </div>
-
-        <div id ="tiempomain">tiempo restante
+        <div id ="tiempo">tiempo restante
             <div>
                 <span class="contador" id="hours">00</span>
                 <span class="contador">Horas</span>
@@ -53,6 +33,17 @@
                 <span class="contador">Minutos</span>
                 <span class ="contador" id="seconds">00</span>
                 <span class="contador">Segundos</span>
+                <p id ="ptiempo">compartir en:  </p>
+                <div class="social-media">
+                    <a href="/" class="social-media-icon">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="/" class="social-media-icon">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+                </div>
+            </div>
+        </div>
 
 <button id="regresa" >regresar</button>
 </body>
@@ -61,5 +52,5 @@
         window.location.href = "main.html";
     });
 </script>
-<script src="js/contador.js"></script>
+<script src="js/invitado.js"></script>
 </html>

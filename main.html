@@ -18,9 +18,9 @@
     </h1>
     <div class="contenedor">
         <button class ="btnApp" id="ingreso">INGRESO</button>
-        <button class ="btnApp" >PASE INVITADO</button>
+        <button class ="btnApp" id = "pase_invitado">PASE INVITADO</button>
         <button class ="btnApp" id ="reporte">  GENERAR REPORTE</button>
-        <button id ="btnEscan">escaner</button>
+
     </div>
 
 </body>
@@ -28,7 +28,9 @@
     <h2 id="marca">Dsoluciones</h2>
 </div>
 <script>
-
+    document.getElementById('pase_invitado').addEventListener('click', function(){
+        window.location.href = "pase_invitado.html";
+    }); 
     document.getElementById('ingreso').addEventListener('click', function(){
         window.location.href = "ingreso.html";
     });

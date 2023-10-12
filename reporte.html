@@ -8,7 +8,7 @@
     
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Reporte</title>
     </head>
 <body>
     <h1 id="titulo">GENERAR REPORTE</h1>
@@ -19,12 +19,20 @@
             <input type="text" placeholder="descripcion">
         </form>
     </div>
-    <button class="btnApp">ENVIAR</button>
-    <button id="regresa">regresar</button>
+    <button class="btnApp" id="regresa">ENVIAR</button>
 </body>
+
 <script>
     document.getElementById('regresa').addEventListener('click', function(){
+        // Redirige a "main.html" cuando se hace clic en el botón "ENVIAR"
         window.location.href = "main.html";
+    });
+
+    document.getElementById('reportetxt').addEventListener('keydown', function(event){
+        if (event.key === "Enter") {
+            // Envía el formulario cuando se presiona "Enter"
+            document.querySelector('form').submit();
+        }
     });
 </script>
 </html>

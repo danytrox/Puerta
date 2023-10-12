@@ -22,5 +22,12 @@
     "nombre" : "cesar miau ",
     "edad"   : 33,
     "rut"    : "7777777-6"
+},
+
+{
+    "id" : 12,
+    "nombre" : "Danery Arriagada ",
+    "edad"   : 23,
+    "rut"    : "20451773-8"
 }
 ]

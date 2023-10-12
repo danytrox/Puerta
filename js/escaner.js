@@ -3,7 +3,10 @@ const contenedor = document.getElementById('contenedor');
 const pop = document.querySelector('.popup');
 const x = document.querySelector('miaudio');
 const resultado = document.getElementById('resultado');
+const titulo = document.getElementById('titulo');
+
 const btn = document.getElementById('btn');
+
 datospersona();
 const verpersona = document.querySelector('.tablapersonas');
 btn.addEventListener('click', verPersonas);
@@ -23,10 +26,19 @@ scanner.addListener('scan', function (contenidoQR) {
     const qr =parseInt(contenidoQR);
     const findPerson = ingresadosJSON.find(persona=>persona.id === qr )
     
+
     console.log(findPerson)
     if (findPerson) {
+        if (findPerson.id === 12) {
+            titulo.textContent = "invitado de ";
+            console.log("invitado de ",findPerson.nombre)
+        }
+        if (findPerson.id != 12) {
+            titulo.textContent = "Persona encontrada";
+        }
         // Mostrar los datos de la persona encontrada
         pop.classList.toggle("spread");
+      
         console.log("Nombre: ",findPerson.nombre,"Rut: ", findPerson.rut)
         resultado.textContent ="Nombre: "+ findPerson.nombre + " Rut: " + findPerson.rut;
         setTimeout(() => {
